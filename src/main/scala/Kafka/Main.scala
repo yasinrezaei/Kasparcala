@@ -1,0 +1,5 @@
+package Kafka
+
+object Main {
+
+}
