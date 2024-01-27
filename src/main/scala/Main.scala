@@ -3,7 +3,7 @@ object Main {
     println("test start")
     println("second")
 
-    Utils.show()
+
   }
 
 }
