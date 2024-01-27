@@ -1,4 +1,4 @@
-package Models.PolyMorphism
+package Models.Shape_PolyMorphism
 
 object Main {
   def main(args: Array[String]): Unit = {
