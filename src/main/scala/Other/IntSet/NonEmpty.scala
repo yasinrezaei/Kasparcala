@@ -1,4 +1,4 @@
-package Models.IntSet
+package Other.IntSet
 
 class NonEmpty(elem:Int,left:IntSet,right:IntSet) extends IntSet {
 

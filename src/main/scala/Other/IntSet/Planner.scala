@@ -1,4 +1,4 @@
-package Models.IntSet
+package Other.IntSet
 
 trait Planner {
     def height:Int

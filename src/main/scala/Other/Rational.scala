@@ -1,4 +1,4 @@
-package Models
+package Other
 
 class Rational(x:Int,y:Int) {
 

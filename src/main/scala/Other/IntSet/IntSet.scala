@@ -1,4 +1,4 @@
-package Models.IntSet
+package Other.IntSet
 
 abstract class IntSet {
       def incl(x:Int):IntSet

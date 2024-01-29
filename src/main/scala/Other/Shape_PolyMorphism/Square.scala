@@ -1,4 +1,4 @@
-package Models.Shape_PolyMorphism
+package Other.Shape_PolyMorphism
 
 case class Square(side:Double) extends Shape {
   override def getArea: Double = side*side

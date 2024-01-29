@@ -1,4 +1,4 @@
-package Models.Shape_PolyMorphism
+package Other.Shape_PolyMorphism
 
 case class Circle(radius:Double) extends Shape{
 

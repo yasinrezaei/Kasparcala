@@ -1,4 +1,4 @@
-package Models.IntSet
+package Other.IntSet
 
 object Main {
   def main(args: Array[String]): Unit = {
