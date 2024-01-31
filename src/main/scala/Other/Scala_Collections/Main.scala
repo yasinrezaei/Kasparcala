@@ -2,6 +2,9 @@ package Other.Scala_Collections
 
 object Main {
 
+  def testtest(a:Int) = {
+    a+2
+  }
   def main(args: Array[String]): Unit = {
 
     val nums: Vector[Int] = Vector(1, 2, 3, 4)
