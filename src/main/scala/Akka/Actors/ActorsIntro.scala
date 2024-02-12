@@ -1,4 +1,4 @@
-package Actors
+package Akka.Actors
 
 import akka.actor.{Actor, ActorSystem, Props}
 
