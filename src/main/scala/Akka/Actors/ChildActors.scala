@@ -21,7 +21,7 @@ object ChildActors extends App {
         context.become(withChild(childRef))
     }
     def withChild(childRef:ActorRef): Receive = {
-      case TellChild(message) => childRef forward(message)
+      case TellChild(message) => childRef forward message
     }
   }
   class Child extends Actor{
