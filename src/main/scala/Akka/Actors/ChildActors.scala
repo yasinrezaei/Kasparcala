@@ -78,6 +78,7 @@ object ChildActors extends App {
       case Deposit(funds) => deposit(funds)
       case Withdraw(funds) => withdraw(funds)
     }
+
     def deposit(funds:Int) = {
       println(s"${self.path} depositing $funds on top of $amount")
       amount += funds
@@ -97,6 +98,7 @@ object ChildActors extends App {
     def attachedTo(account: ActorRef):Receive = {
       case CheckStatus =>
         println(s"[ ${self.path} ] your message has been processed")
+
     }
   }
 
