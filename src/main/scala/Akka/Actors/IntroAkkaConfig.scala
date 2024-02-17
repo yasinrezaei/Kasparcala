@@ -11,7 +11,7 @@ object IntroAkkaConfig extends App {
   class SimpleActor extends Actor with ActorLogging {
     override def receive: Receive = {
       case message:String => log.info(message.toString)//log it
-
+      
     }
   }
 
