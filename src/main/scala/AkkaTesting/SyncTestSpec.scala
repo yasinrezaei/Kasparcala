@@ -21,14 +21,8 @@ class SyncTestSpec extends AnyWordSpecLike with BeforeAndAfterAll{
       counter.receive(Inc)
       assert(counter.underlyingActor.count==1)
     }
-
-
-
-
-
   }
 }
-
 object SyncTestSpec{
   case object Inc
   case object Read
