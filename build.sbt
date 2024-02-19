@@ -8,16 +8,30 @@ lazy val root = (project in file("."))
   )
 
 val akkaVersion = "2.8.0"
-val akkaHttpVersion = "10.1.11"
+val akkaHttpVersion = "10.2.0"
+val akkaHttpJsonSerializersVersion = "1.34.0"
+val circeVersion = "0.15.0-M1"
 
 libraryDependencies ++= Seq(
+  //circe version
+  "io.circe" %% "circe-core" % circeVersion,
+  "io.circe" %% "circe-generic" % circeVersion,
+  "io.circe" %% "circe-parser" % circeVersion,
+
+  //apache commons
+  "commons-io" % "commons-io" % "2.11.0",
+
   // akka streams
   "com.typesafe.akka" %% "akka-stream" % akkaVersion,
+  "com.typesafe.akka" %% "akka-actor-typed" % akkaVersion,
+
   // akka http
   "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-actor" % akkaVersion,
   "com.typesafe.akka" %% "akka-testkit" % akkaVersion,
+  "de.heikoseeberger" %% "akka-http-circe" % akkaHttpJsonSerializersVersion,
+  "de.heikoseeberger" %% "akka-http-jackson" % akkaHttpJsonSerializersVersion,
   "org.scalatest" %% "scalatest" % "3.2.15"
 )
 
