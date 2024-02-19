@@ -8,11 +8,21 @@ lazy val root = (project in file("."))
   )
 
 val akkaVersion = "2.8.0"
+val akkaHttpVersion = "10.1.11"
+
 libraryDependencies ++= Seq(
+  // akka streams
+  "com.typesafe.akka" %% "akka-stream" % akkaVersion,
+  // akka http
+  "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
+  "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-actor" % akkaVersion,
   "com.typesafe.akka" %% "akka-testkit" % akkaVersion,
   "org.scalatest" %% "scalatest" % "3.2.15"
 )
+
+
+
 
 val sparkVersion = "3.5.0"
 val postgresVersion = "42.6.0"
