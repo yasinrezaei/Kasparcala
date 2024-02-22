@@ -57,6 +57,7 @@ libraryDependencies ++= Seq(
   "org.apache.logging.log4j" % "log4j-core" % log4jVersion,
   // postgres for DB connectivity
   "org.postgresql" % "postgresql" % postgresVersion
+
 )
 
 
